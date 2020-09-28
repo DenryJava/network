@@ -17,7 +17,7 @@ public class UdpSender {
                     str.getBytes().length, new InetSocketAddress("127.0.0.1", 6666));
             //发送
             socket.send(packet);
-            if("bye".equals(str))break;
+            if("bye".equals(str.trim()))break;
         }
         socket.close();
     }

@@ -38,7 +38,7 @@ public class TalkSend implements Runnable {
                         str.getBytes().length, new InetSocketAddress(this.toIP, this.toPort));
                 //发送
                 socket.send(packet);
-                if ("bye".equals(str)) break;
+                if ("bye".equals(str.trim())) break;
             } catch (IOException e) {
                 e.printStackTrace();
             }

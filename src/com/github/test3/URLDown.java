@@ -15,7 +15,7 @@ public class URLDown {
         // 转为流读取
         InputStream inputStream = urlConnection.getInputStream();
         // 文件流输出
-        FileOutputStream fileOutputStream = new FileOutputStream("test.pngd");
+        FileOutputStream fileOutputStream = new FileOutputStream("test.png");
         byte[] bytes = new byte[1024];
         int let;
         while((let=inputStream.read(bytes)) != -1){
